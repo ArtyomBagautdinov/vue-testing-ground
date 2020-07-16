@@ -71,12 +71,12 @@ export default {
     border: none;
 }
 
-.message__container input:checked {
+.message__container input:focus {
     background: rgba(0, 0, 0, 0);
     margin-left: 30px;
     border: none;
+    outline: none;
 }
-
 
 .message__container:hover{
     -webkit-box-shadow: 1px 5px 18px 5px rgba(168,168,168,1);
