@@ -1,8 +1,11 @@
 <template>
     <div class="message">
         <div class="message__container">
-            <p>{{text}}</p>
-            <div class="message__close-button" @click="buttonClicked">
+            <input type="text" v-model="text">
+            <div class="message__update-button" @click="updateClicked">
+                <img src="https://image.flaticon.com/icons/svg/3208/3208691.svg" alt="update button">
+            </div>
+            <div class="message__close-button" @click="removeClicked">
                 <span class="left">
                     <span class="circle-left"></span>
                     <span class="circle-right"></span>
@@ -29,8 +32,11 @@ export default {
         }
     },
     methods : {
-        buttonClicked () {
-            this.$emit('buttonClicked',this.id)
+        removeClicked () {
+            this.$emit('removeClicked',this.id)
+        },
+        updateClicked () {
+            this.$emit('updateClicked',this.id,this.text)
         }
     }
 }
@@ -46,25 +52,63 @@ export default {
     align-items: center;
     justify-content: space-between;
     height: 150px;
-    width: 650px;
+    width: 850px;
     background: rgb(0,114,249);
     background: linear-gradient(83deg, rgba(0,114,249,1) 0%, rgba(96,134,255,1) 100%);
     border-radius: 50px;
-    color: white;
-    font-size: 25px;
-    font-family: "Roboto Condensed";
-    font-weight: 500;
+    
     margin: 20px;
 }
 
-.message__container p {
+.message__container input {
+    width: 470px;
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    font-family: "Roboto Condensed";
+    color: white;
+    font-weight: 500;
     margin-left: 30px;
+    border: none;
 }
+
+.message__container input:checked {
+    background: rgba(0, 0, 0, 0);
+    margin-left: 30px;
+    border: none;
+}
+
 
 .message__container:hover{
     -webkit-box-shadow: 1px 5px 18px 5px rgba(168,168,168,1);
     -moz-box-shadow: 1px 5px 18px 5px rgba(168,168,168,1);
     box-shadow: 1px 5px 18px 5px rgba(168,168,168,1);
+}
+
+
+.message__update-button {
+   width:100px;
+   height:100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffffff;
+   border-radius: 50%;
+   opacity: 1;
+   transition: .2s;
+   -webkit-box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+   -moz-box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+   box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+}
+
+.message__update-button img {
+  transition: .4s;
+  width: 60px;
+  height: 60px;
+}
+
+.message__update-button img:hover {
+  transform: rotate(360deg);
 }
 
 .message__close-button {

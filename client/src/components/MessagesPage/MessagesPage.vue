@@ -1,7 +1,7 @@
 <template>
   <div class="messages-page">
       <div class="chart"  v-bind:refresh-token = "refreshToken">
-        <Message  v-for="val in $_toDo" :key="val" v-bind:text="val.text" v-bind:id="val.id" @buttonClicked="removeRefresh"/>
+        <Message  v-for="val in $_toDo" :key="val" v-bind:text="val.text" v-bind:id="val.id" @removeClicked="removeRefresh" @updateClicked="updateRefresh"/>
       </div>
       <div class="input_field">
         <label for="newToDo">Новый таск</label>
@@ -18,7 +18,7 @@ import toDo from '../../mixin/toDo'
 
 import Message from './Message'
 
-import {removeData,addData} from '../../requests/toDo'
+import {removeData,addData,updateData} from '../../requests/toDo'
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -58,7 +58,12 @@ export default {
       await sleep(100);
       this.$_fetchToDo("http://localhost:3000/toDo");   
 
-    }
+    },
+    async updateRefresh(id,text){
+      updateData(id,text);
+      await sleep(100);
+      this.$_fetchToDo("http://localhost:3000/toDo");   
+    },
   }
 }
 

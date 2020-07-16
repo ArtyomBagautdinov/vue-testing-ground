@@ -25,3 +25,14 @@ export const addData = (newId,newText) => {
         }
     })
 }
+
+export const updateData = (curId,newText) => {
+    return request({
+        method : 'PUT',
+        url : '/toDo/' + curId.toString(),
+        data : {
+            id : curId,
+            text : newText
+        }
+    })
+}
