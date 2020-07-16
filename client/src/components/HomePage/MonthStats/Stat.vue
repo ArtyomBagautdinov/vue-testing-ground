@@ -1,0 +1,73 @@
+<template>
+    <div class ="stat__container">
+        <div class ="stat__circle"></div>
+        <div class = "stat__bar" :style="heightParam"></div>
+        <div class = "stat__value">{{value.param}}k</div>
+    </div>
+</template>
+
+<script>
+export default {
+    props : {
+        value : {
+            type : Number,
+            required: true
+        }
+    },
+    computed : {
+        heightParam : function () {
+            return "height: " + this.value.param*5.6.toString() + 'px'
+        }
+    }
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+HK:wght@300;700&family=Open+Sans:wght@600&family=Roboto+Condensed&display=swap');
+
+.stat__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 22px;
+}
+
+.stat__circle{
+    border-radius: 50%;
+    height: 10px;
+    width:10px;
+    background: rgb(249,133,0);
+    background: linear-gradient(180deg, rgba(249,133,0,1) 0%, rgba(255,205,65,1) 52%, rgba(255,232,96,1) 100%);
+}
+.stat__bar{
+    transition: .2s;
+    margin-top:5px;
+    border-radius: 20px;
+    width:30px;
+    background: rgb(249,133,0);
+    background: linear-gradient(180deg, rgba(249,133,0,1) 0%, rgba(255,205,65,1) 52%, rgba(255,232,96,1) 100%);
+    
+}
+
+.stat__container:hover .stat__bar{
+    margin-top: 25px;
+}
+
+.stat__container:hover .stat__bar {
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(249,133,0,1);
+    -moz-box-shadow: 0px 1px 10px 1px rgba(249,133,0,1);
+    box-shadow: 0px 1px 10px 1px rgba(249,133,0,1);
+}
+
+.stat__value{
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family:"Noto Sans HK";
+    font-weight: 700;
+    color: rgb(107, 107, 107);
+}
+
+</style>
+

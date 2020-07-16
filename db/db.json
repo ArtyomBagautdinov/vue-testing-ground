@@ -1,0 +1,222 @@
+{
+  "monthStats": [
+    {
+      "id": 1,
+      "param": 9.2
+    },
+    {
+      "id": 2,
+      "param": 19.1
+    },
+    {
+      "id": 3,
+      "param": 13
+    },
+    {
+      "id": 4,
+      "param": 15.8
+    },
+    {
+      "id": 5,
+      "param": 24
+    },
+    {
+      "id": 6,
+      "param": 9.2
+    }
+  ],
+  "incomes": [
+    {
+      "name": "Apple (APPL)",
+      "profit": 830,
+      "percentChange": 1.1,
+      "image": "https://image.flaticon.com/icons/svg/1532/1532495.svg"
+    },
+    {
+      "name": "Hewlett Pacard",
+      "profit": 415,
+      "percentChange": 0.6,
+      "image": "https://image.flaticon.com/icons/svg/882/882851.svg"
+    },
+    {
+      "name": "Google",
+      "profit": 130,
+      "percentChange": -0.2,
+      "image": "https://image.flaticon.com/icons/svg/2991/2991148.svg"
+    }
+  ],
+  "topFiveDay": [
+    {
+      "id": 0,
+      "fullName": "Google Inc. (GOOG)",
+      "shortName": "GOOG",
+      "value": 70,
+      "changePercent": -1.2,
+      "color": "linear-gradient(184deg, rgba(104,201,255,1) 0%, rgba(101,93,255,1) 50%, rgba(76,82,254,1) 100%)"
+    },
+    {
+      "id": 1,
+      "fullName": "Apple Inc. (APPL)",
+      "shortName": "APPL",
+      "value": 90,
+      "changePercent": 1.64,
+      "color": "linear-gradient(184deg, rgba(255,159,104,1) 0%, rgba(254,196,89,1) 47%, rgba(254,228,76,1) 100%)"
+    },
+    {
+      "id": 2,
+      "fullName": "Hewlet Packard Inc. (HP)",
+      "shortName": "HP",
+      "value": 40,
+      "changePercent": 3.54,
+      "color": "linear-gradient(184deg, rgba(104,255,106,1) 0%, rgba(0,158,21,1) 100%)"
+    },
+    {
+      "id": 3,
+      "fullName": "Tesla Motor Company. (TSLA)",
+      "shortName": "TSLA",
+      "value": 80,
+      "changePercent": 10.5,
+      "color": "linear-gradient(184deg, rgba(255,104,201,1) 0%, rgba(199,44,105,1) 50%, rgba(158,0,35,1) 100%)"
+    }
+  ],
+  "topFiveWeek": [
+    {
+      "id": 0,
+      "fullName": "Google Inc. (GOOG)",
+      "shortName": "GOOG",
+      "value": 90,
+      "changePercent": -1.2,
+      "color": "linear-gradient(184deg, rgba(255,159,104,1) 0%, rgba(254,196,89,1) 47%, rgba(254,228,76,1) 100%)"
+    },
+    {
+      "id": 1,
+      "fullName": "Apple Inc. (APPL)",
+      "shortName": "APPL",
+      "value": 70,
+      "changePercent": 1.64,
+      "color": "linear-gradient(184deg, rgba(104,201,255,1) 0%, rgba(101,93,255,1) 50%, rgba(76,82,254,1) 100%)"
+    },
+    {
+      "id": 2,
+      "fullName": "Hewlet Packard Inc. (HP)",
+      "shortName": "HP",
+      "value": 80,
+      "changePercent": 3.54,
+      "color": "linear-gradient(184deg, rgba(104,255,106,1) 0%, rgba(0,158,21,1) 100%)"
+    },
+    {
+      "id": 3,
+      "fullName": "Tesla Motor Company. (TSLA)",
+      "shortName": "TSLA",
+      "value": 60,
+      "changePercent": 10.5,
+      "color": "linear-gradient(184deg, rgba(255,104,201,1) 0%, rgba(199,44,105,1) 50%, rgba(158,0,35,1) 100%)"
+    }
+  ],
+  "topFiveMonth": [
+    {
+      "id": 0,
+      "fullName": "Google Inc. (GOOG)",
+      "shortName": "GOOG",
+      "value": 65,
+      "changePercent": -1.2,
+      "color": "linear-gradient(184deg, rgba(104,201,255,1) 0%, rgba(101,93,255,1) 50%, rgba(76,82,254,1) 100%)"
+    },
+    {
+      "id": 1,
+      "fullName": "Apple Inc. (APPL)",
+      "shortName": "APPL",
+      "value": 60,
+      "changePercent": 1.64,
+      "color": "linear-gradient(184deg, rgba(255,159,104,1) 0%, rgba(254,196,89,1) 47%, rgba(254,228,76,1) 100%)"
+    },
+    {
+      "id": 2,
+      "fullName": "Hewlet Packard Inc. (HP)",
+      "shortName": "HP",
+      "value": 79,
+      "changePercent": 3.54,
+      "color": "linear-gradient(184deg, rgba(104,255,106,1) 0%, rgba(0,158,21,1) 100%)"
+    },
+    {
+      "id": 3,
+      "fullName": "Tesla Motor Company. (TSLA)",
+      "shortName": "TSLA",
+      "value": 90,
+      "changePercent": 10.5,
+      "color": "linear-gradient(184deg, rgba(255,104,201,1) 0%, rgba(199,44,105,1) 50%, rgba(158,0,35,1) 100%)"
+    }
+  ],
+  "topFiveYear": [
+    {
+      "id": 0,
+      "fullName": "Google Inc. (GOOG)",
+      "shortName": "GOOG",
+      "value": 55,
+      "changePercent": -1.2,
+      "color": "linear-gradient(184deg, rgba(104,201,255,1) 0%, rgba(101,93,255,1) 50%, rgba(76,82,254,1) 100%)"
+    },
+    {
+      "id": 1,
+      "fullName": "Apple Inc. (APPL)",
+      "shortName": "APPL",
+      "value": 60,
+      "changePercent": 1.64,
+      "color": "linear-gradient(184deg, rgba(255,159,104,1) 0%, rgba(254,196,89,1) 47%, rgba(254,228,76,1) 100%)"
+    },
+    {
+      "id": 2,
+      "fullName": "Hewlet Packard Inc. (HP)",
+      "shortName": "HP",
+      "value": 90,
+      "changePercent": 3.54,
+      "color": "linear-gradient(184deg, rgba(255,104,201,1) 0%, rgba(199,44,105,1) 50%, rgba(158,0,35,1) 100%)"
+    },
+    {
+      "id": 3,
+      "fullName": "Tesla Motor Company. (TSLA)",
+      "shortName": "TSLA",
+      "value": 70,
+      "changePercent": 23.5,
+      "color": "linear-gradient(184deg, rgba(104,255,106,1) 0%, rgba(0,158,21,1) 100%)"
+    }
+  ],
+  "portfolioVolume": [
+    {
+      "value": "300",
+      "cash": 990,
+      "marginTop": "200px",
+      "marginBottom": "200px"
+    },
+    {
+      "value": "488",
+      "cash": 900,
+      "marginTop": "0px",
+      "marginBottom": "0px"
+    },
+    {
+      "value": "100",
+      "cash": 750,
+      "marginTop": "-200px",
+      "marginBottom": "-200px"
+    }
+  ],
+  "toDo": [
+    {
+      "id": 1,
+      "text": "Изучить основы Vue"
+    },
+    {
+      "id": 2,
+      "text": "Изучить основы vuex"
+    },
+    {
+      "id": 3,
+      "text": "Изучить основы router-vue"
+    },
+    {
+      "id": 4,
+      "text": "Научиться разбивать store на модули"
+    }
+  ]
+}
